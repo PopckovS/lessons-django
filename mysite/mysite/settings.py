@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Подключенные приложения в Django
+    'polls.apps.PollsConfig',
+    # Стандартные приложения Django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,11 +79,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
+        # 'ENGINE': 'django.db.backends.mysql',
         'NAME': BASE_DIR / 'db.sqlite3',
-        # 'USER': 'admin',
-        # 'PASSWORD': 'pass',
+        # 'NAME': 'django',
+        # 'USER': 'serg',
+        # 'PASSWORD': '11',
         # 'HOST': '127.0.0.1',
-        # 'PORT': '8000',
+        # 'PORT': '3306',
     }
 }
 
