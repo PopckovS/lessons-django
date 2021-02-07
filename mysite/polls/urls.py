@@ -4,6 +4,9 @@ from django.urls import path
 # Импортируем представления
 from . import views
 
+
+app_name = 'polls'
+
 # Данный список, создает связь между URL путями и представлениями
 urlpatterns = [
     # ex: /polls/
